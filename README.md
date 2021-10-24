@@ -21,11 +21,29 @@ predict function applied and below as the forecast:
 ![image](https://user-images.githubusercontent.com/57244750/138582066-50b6b5b9-700c-40f3-b749-7bcaf00e0b88.png)
 
 
-Concepts to be learnt:
+**Concepts to be learnt:**
 
-SARIMAX
+Stationarity Check, if dataset is stationary:
+
+**Dickey-Fuller Test**
+
+A Dickey-Fuller test is a unit root test that tests the null hypothesis that α=1 in the following model equation. alpha is the coefficient of the first lag on Y.
+
+Null Hypothesis (H0): alpha=1
+
+where,
+
+y(t-1) = lag 1 of time series.
+delta Y(t-1) = first difference of the series at time (t-1).
+Fundamentally, it has a similar null hypothesis as the unit root test. That is, the coefficient of Y(t-1) is 1, implying the presence of a unit root. If not rejected, the series is taken to be non-stationary.
+
+**SARIMAX**
 SARIMAX(Seasonal Auto-Regressive Integrated Moving Average with eXogenous factors) is an updated version of the ARIMA model. ARIMA includes an autoregressive integrated moving average, while SARIMAX includes seasonal effects and eXogenous factors with the autoregressive and moving average component in the model. Therefore, we can say SARIMAX is a seasonal equivalent model like SARIMA and Auto ARIMA.
 
 ![image](https://user-images.githubusercontent.com/57244750/138582504-34c073f8-b03f-40c1-8765-5950c79b70eb.png)
 
 ![image](https://user-images.githubusercontent.com/57244750/138582514-ee4a7415-d772-47f1-b63c-da13f2340f96.png)
+
+
+
+
